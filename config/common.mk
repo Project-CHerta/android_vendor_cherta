@@ -123,3 +123,16 @@ CUSTOM_LOCALES += \
 -include vendor/lineage-priv/keys/keys.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# CHerta stuff go here
+
+# Bootanimation
+ifeq ($(strip $(TARGET_BOOT_ANIMATION_RES)),)
+    $(warning "TARGET_BOOT_ANIMATION_RES is undefined, assuming 1080p")
+else
+    $(call soong_config_set,vendor_cherta,bootanimation_res,$(TARGET_BOOT_ANIMATION_RES))
+endif
+
+PRODUCT_PACKAGES += \
+    bootanimation \
+    bootanimation_dark
