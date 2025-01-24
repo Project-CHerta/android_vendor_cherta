@@ -86,6 +86,12 @@ PRODUCT_PACKAGES += \
     pixel_bootanimation \
     pixel_bootanimation_dark
 
+# ColumbusService
+ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
+PRODUCT_PACKAGES += \
+    ColumbusService
+endif
+
 # Google Photos Pixel Exclusive XML
 PRODUCT_COPY_FILES += \
     vendor/cherta/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
