@@ -21,6 +21,11 @@ PRODUCT_PACKAGES += \
     Aperture
 endif
 
+ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
+PRODUCT_PACKAGES += \
+    ColumbusService
+endif
+
 # Charger
 PRODUCT_PACKAGES += \
     pixel_charger_animation \
