@@ -126,6 +126,12 @@ CUSTOM_LOCALES += \
 
 # CHerta stuff go here
 
+# APEX
+DISABLE_DEXPREOPT_CHECK := true
+
+PRODUCT_PACKAGES += \
+    com.google.android.permission
+
 # Bootanimation
 ifeq ($(strip $(TARGET_BOOT_ANIMATION_RES)),)
     $(warning "TARGET_BOOT_ANIMATION_RES is undefined, assuming 1080p")
@@ -185,5 +191,6 @@ ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
 PRODUCT_PACKAGES += \
     ColumbusService
 endif
+
 # Versioning
 include vendor/cherta/config/version.mk
