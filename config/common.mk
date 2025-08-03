@@ -115,6 +115,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     framework_compatibility_matrix.lineage.xml
 
+# OpenDelta
+PRODUCT_PACKAGES += \
+    OpenDelta
+
+PRODUCT_COPY_FILES += \
+    vendor/cherta/prebuilt/common/etc/init/opendelta-ota.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/opendelta-ota.rc \
+    vendor/cherta/prebuilt/common/etc/permissions/power-whitelist-opendelta.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/power-whitelist-opendelta.xml \
+    vendor/cherta/prebuilt/common/etc/permissions/privapp-permissions-opendelta.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-opendelta.xml
+
 # Storage manager
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.storage_manager.enabled=true
