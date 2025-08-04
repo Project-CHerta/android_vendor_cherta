@@ -146,5 +146,9 @@ endif
 # GMS
 include vendor/cherta/config/pixel.mk
 
+# Overlay
+PRODUCT_PACKAGES += \
+    SettingsOverlay
+
 # Versioning
 include vendor/cherta/config/version.mk
