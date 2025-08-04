@@ -148,6 +148,7 @@ include vendor/cherta/config/pixel.mk
 
 # Overlay
 PRODUCT_PACKAGES += \
+    FrameworkOverlay \
     SettingsOverlay
 
 # Versioning
