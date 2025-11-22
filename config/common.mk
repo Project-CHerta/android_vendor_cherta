@@ -128,6 +128,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/procmem
 endif
 
+# SurfaceFlinger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1
+
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
