@@ -137,6 +137,11 @@ PRODUCT_PACKAGES += \
     bootanimation \
     bootanimation_dark
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_animation \
+    charger_animation_vendor
+
 # EPPE
 ifneq ($(TARGET_DISABLE_EPPE),true)
 # Require all requested packages to exist
