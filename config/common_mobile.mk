@@ -18,6 +18,11 @@ PRODUCT_PACKAGES += \
     Aperture
 endif
 
+# Charger
+PRODUCT_PACKAGES += \
+    pixel_charger_animation \
+    pixel_charger_animation_vendor
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
