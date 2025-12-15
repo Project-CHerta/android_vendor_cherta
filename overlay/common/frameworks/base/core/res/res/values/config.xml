@@ -511,4 +511,7 @@
 
     <!-- AOD wallpaper -->
     <bool name="config_dozeSupportsAodWallpaper">true</bool>
+
+    <!-- RBC -->
+    <bool name="config_reduceBrightColorsAvailable">true</bool>
 </resources>
