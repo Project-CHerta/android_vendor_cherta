@@ -1,13 +1,13 @@
-# Inherit mobile full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile_full.mk)
+# Inherit mobile common CHerta stuff
+$(call inherit-product, vendor/cherta/config/common_mobile.mk)
 
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode?=true
 
-# Inherit tablet common Lineage stuff
-$(call inherit-product, vendor/lineage/config/tablet.mk)
+# Inherit tablet common CHerta stuff
+$(call inherit-product, vendor/cherta/config/tablet.mk)
 
-$(call inherit-product, vendor/lineage/config/telephony.mk)
+$(call inherit-product, vendor/cherta/config/telephony.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/foldable_book
+PRODUCT_PACKAGE_OVERLAYS += vendor/cherta/overlay/foldable_book
