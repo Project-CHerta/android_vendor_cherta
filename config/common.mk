@@ -136,3 +136,6 @@ endif
 PRODUCT_PACKAGES += \
     bootanimation \
     bootanimation_dark
+
+# GMS
+include vendor/cherta/config/pixel.mk
