@@ -156,5 +156,10 @@ PRODUCT_PACKAGES += \
     FrameworkOverlay \
     SettingsOverlay
 
+# Quick Tap
+ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
+PRODUCT_PACKAGES += \
+    ColumbusService
+endif
 # Versioning
 include vendor/cherta/config/version.mk
