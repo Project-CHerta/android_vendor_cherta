@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
 
 # Component overrides
 PRODUCT_PACKAGES += \
-    lineage-component-overrides.xml
+    cherta-component-overrides.xml
 
 # Enforce privapp-permissions whitelist
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -105,10 +105,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 endif
 
 # Overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/no-rro
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cherta/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/lineage/overlay/common \
-    vendor/lineage/overlay/no-rro
+    vendor/cherta/overlay/common \
+    vendor/cherta/overlay/no-rro
 
 PRODUCT_PACKAGES += \
     NetworkStackOverlay

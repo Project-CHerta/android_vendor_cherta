@@ -1,5 +1,5 @@
-# Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common mobile CHerta stuff
+$(call inherit-product, vendor/cherta/config/common.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
