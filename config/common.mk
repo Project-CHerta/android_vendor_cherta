@@ -139,3 +139,6 @@ PRODUCT_PACKAGES += \
 
 # GMS
 include vendor/cherta/config/pixel.mk
+
+# Versioning
+include vendor/cherta/config/version.mk
