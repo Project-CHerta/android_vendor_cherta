@@ -140,8 +140,8 @@ else
 endif
 
 PRODUCT_PACKAGES += \
-    bootanimation \
-    bootanimation_dark
+    pixel_bootanimation \
+    pixel_bootanimation_dark
 
 # Charger
 PRODUCT_PACKAGES += \

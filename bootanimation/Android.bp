@@ -1,5 +1,5 @@
 prebuilt_media {
-    name: "bootanimation",
+    name: "pixel_bootanimation",
     filename: "bootanimation.zip",
     product_specific: true,
     src: select(soong_config_variable("vendor_cherta", "bootanimation_res"), {
@@ -10,7 +10,7 @@ prebuilt_media {
 }
 
 install_symlink {
-    name: "bootanimation_dark",
+    name: "pixel_bootanimation_dark",
     product_specific: true,
     installed_location: "media/bootanimation-dark.zip",
-    symlink_target: "bootanimation",
+    symlink_target: "pixel_bootanimation",
