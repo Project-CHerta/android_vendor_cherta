@@ -162,11 +162,6 @@ endif
 # GMS
 include vendor/cherta/config/pixel.mk
 
-# Overlay
-PRODUCT_PACKAGES += \
-    FrameworkOverlay \
-    SettingsOverlay
-
 # Quick Tap
 ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
 PRODUCT_PACKAGES += \
