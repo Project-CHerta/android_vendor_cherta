@@ -222,10 +222,10 @@ else
             $(warning **********************************************************)
             FULL_KERNEL_BUILD := false
             KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
+        else
+            FULL_KERNEL_BUILD := true
+            KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
         endif
-    else
-        FULL_KERNEL_BUILD := true
-        KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
     endif
 endif
 
