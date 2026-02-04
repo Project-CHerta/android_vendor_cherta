@@ -14,3 +14,4 @@ install_symlink {
     product_specific: true,
     installed_location: "media/bootanimation-dark.zip",
     symlink_target: "pixel_bootanimation",
+}
