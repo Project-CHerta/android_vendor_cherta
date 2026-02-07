@@ -1,4 +1,5 @@
 # GMS
+WITH_GMS ?= true
 ifneq ($(WITH_GMS),false)
 $(call inherit-product, vendor/gms/products/gms.mk)
 endif
