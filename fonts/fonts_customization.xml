@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fonts-modification>
   <family customizationType="new-named-family" name="google-sans">
     <font weight="400" style="normal">GoogleSans-Regular.ttf
       <axis tag="GRAD" stylevalue="0"/>
@@ -511,3 +513,4 @@
       <axis tag="wght" stylevalue="700"/>
     </font>
   </family>
+</fonts-modification>
