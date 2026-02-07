@@ -129,8 +129,10 @@ CUSTOM_LOCALES += \
 # APEX
 DISABLE_DEXPREOPT_CHECK := true
 
+ifneq ($(CHERTA_BUILD),cf_phone_x86_64)
 PRODUCT_PACKAGES += \
     com.google.android.permission
+endif
 
 # Bootanimation
 ifeq ($(strip $(TARGET_BOOT_ANIMATION_RES)),)
@@ -159,7 +161,7 @@ ifneq ($(TARGET_DISABLE_EPPE),true)
 $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(CHERTA_BUILD)/$(TARGET_PRODUCT).mk),product_manifest.xml rild Calendar android.hidl.memory@1.0-impl.vendor vndk_apex_snapshot_package)
 endif
 
-# GMS
+# Pixel stuff
 include vendor/cherta/config/pixel.mk
 
 # Quick Tap
