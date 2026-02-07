@@ -3,7 +3,7 @@ CHERTA_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M%S)
 ifeq ($(WITH_GMS),false)
 CHERTA_BUILDTYPE := Vanilla
 else
-CHERTA_BUILD_TYPE := Pixel
+CHERTA_BUILDTYPE := Pixel
 endif
 
 CHERTA_BUILD_VERSION := 25H2
