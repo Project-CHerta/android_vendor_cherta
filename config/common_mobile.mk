@@ -4,6 +4,9 @@ $(call inherit-product, vendor/cherta/config/common.mk)
 # Include Google Sans
 include vendor/cherta/config/fonts.mk
 
+# Include Pixel audio
+include vendor/cherta/config/audio.mk
+
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound=Eureka.ogg \
