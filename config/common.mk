@@ -139,3 +139,4 @@ include vendor/cherta/config/version.mk
 $(call inherit-product-if-exists, vendor/certification/config.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+include vendor/gms/products/gms.mk
