@@ -141,3 +141,4 @@ include vendor/cherta/config/version.mk
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 -include vendor/certification/config.mk
+include vendor/gms/products/gms.mk
