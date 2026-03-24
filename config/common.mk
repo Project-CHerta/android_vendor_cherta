@@ -49,10 +49,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.software.credentials.prebuilt.xml
 
-# Component overrides
-PRODUCT_PACKAGES += \
-    cherta-component-overrides.xml
-
 # Enforce privapp-permissions whitelist
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=enforce

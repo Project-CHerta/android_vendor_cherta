@@ -1,6 +1,0 @@
-prebuilt_etc_xml {
-    name: "cherta-component-overrides.xml",
-    product_specific: true,
-    src: "etc/cherta-component-overrides.xml",
-    sub_dir: "sysconfig",
-}
